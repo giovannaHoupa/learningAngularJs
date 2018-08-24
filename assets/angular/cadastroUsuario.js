@@ -5,7 +5,7 @@ angular.module("roupasApp").run(["$http", function ($http) {
     $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
 }]);
 
-angular.module("roupasApp").controller("cadastroUsuarioCtrl", function ($scope, $http) {
+angular.module("roupasApp").controller("cadastroUsuarioCtrl", ['$scope', '$http', function ($scope, $http) {
 
     // Adiciona Usuário
     $scope.addUsuario = function () {
@@ -20,4 +20,4 @@ angular.module("roupasApp").controller("cadastroUsuarioCtrl", function ($scope, 
         });
     };
 
-});
+}]);

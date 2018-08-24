@@ -4,6 +4,10 @@
 <head>
     <title>Cadastro de Usuário</title>
 
+    <?php
+        $this->load->view('includes/linksGerais');
+    ?>
+
     <link href="<?= base_url(); ?>assets/css/cadastro.css" rel="stylesheet" type="text/css"/>
     <script src="<?= base_url(); ?>assets/angular/cadastroUsuario.js"></script>
 
