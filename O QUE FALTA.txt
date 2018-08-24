@@ -1,0 +1,21 @@
+FRONT
+ - Login & cadastro (cadastro modal)
+ - Front lista de usuários (com foto)
+ - Front cadastro roupa (modal)
+ - Front lista roupas
+ - Front cad. categorias
+ - Front lista categorias
+ - Front cad. tamanhos
+ - Front lista tamanhos
+ - Modal pra cadastrar categoria e tamanhos inline
+ 
+
+BACK
+ - Login
+ - Cadastro
+ - Cadastro roupas
+ - Editar roupas
+ - Cadastro categorias
+ - Editar categorias
+ - Cadastro tamanhos
+ - Editar tamanhos
