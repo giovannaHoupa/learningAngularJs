@@ -22,7 +22,7 @@
 <div class="container">
 
     <!-- Formulário de Cadastro de Usuarios -->
-    <div>
+    <div ng-if="teste">
         <div>
             <h1>Novo Usuário</h1>
         </div>

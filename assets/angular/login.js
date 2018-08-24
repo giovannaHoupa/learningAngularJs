@@ -1,5 +1,5 @@
-angular.module("roupasApp",[]);
+angular.module("teste",[]);
 
-angular.module('roupasApp').controller('loginCtrl',function ($scope) {
-    $scope.teste = "Mano do ceu";
+angular.module("teste").controller('loginCtrl',function ($scope) {
+    $scope.teste = true;
 });
