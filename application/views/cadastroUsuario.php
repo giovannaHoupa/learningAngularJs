@@ -19,32 +19,39 @@
 
 <body ng-controller="cadastroUsuarioCtrl">
 
-<div class="container">
+<a href="#openModal">Abrir Modal</a>
 
-    <!-- Formulário de Cadastro de Usuarios -->
-    <div ng-if="teste">
-        <div>
-            <h1>Novo Usuário</h1>
-        </div>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="closeModal"></a>
+        <!-- Conteúdo do Modal -->
 
-        <form ng-submit="addUsuario()" method="post">
-            <div>
-                <input type="text" required ng-model="nome_usuario" name="nomeUsuario" id="nomeUsuario" placeholder="Nome: ">
+            <!-- Formulário de Cadastro de Usuarios -->
+            <div class="container">
+                <div class="title-modal">
+                    Novo Usuário
+                </div>
+
+                <form class="form-cadastro" ng-submit="addUsuario()" method="post">
+                    <div class="form-input">
+                        <input class="input-cadastro" type="text" required ng-model="nome_usuario" name="nomeUsuario" id="nomeUsuario" placeholder="Nome: ">
+                    </div>
+
+                    <div class="form-input">
+                        <input class="input-cadastro" type="text" required ng-model="login" name="login" id="login" placeholder="Login: ">
+                    </div>
+
+                    <div class="form-input">
+                        <input class="input-cadastro" type="password" required ng-model="senha" name="senha" id="senha" placeholder="Senha: ">
+                    </div>
+
+                    <div class="btn-cadastro">
+                        <button class="btn-form" type="submit">Salvar</button>
+                    </div>
+                </form>
             </div>
 
-            <div>
-                <input type="text" required ng-model="login" name="login" id="login" placeholder="Login: ">
-            </div>
-
-            <div>
-                <input type="password" required ng-model="senha" name="senha" id="senha" placeholder="Senha: ">
-            </div>
-
-            <div>
-                <button type="reset">Cancelar</button>
-                <button type="submit">Salvar</button>
-            </div>
-        </form>
+        <!-- Conteúdo do Modal -->
     </div>
 </div>
 
