@@ -5,7 +5,11 @@
     <title>Cadastro de Usuário</title>
 
     <link href="<?= base_url(); ?>assets/css/cadastro.css" rel="stylesheet" type="text/css"/>
-    <script src="<?= base_url(); ?>assets/angular/cadastro.js"></script>
+    <script src="<?= base_url(); ?>assets/angular/cadastroUsuario.js"></script>
+
+    <script type="text/javascript">
+        var baseUrl = '<?= base_url(); ?>'
+    </script>
 </head>
 
 <body ng-controller="cadastroUsuarioCtrl">
