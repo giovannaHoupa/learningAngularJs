@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,MAAM;EACJ,gBAAgB,EAAE,GAAG",
-"sources": ["global.scss"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "global.css"
 }
