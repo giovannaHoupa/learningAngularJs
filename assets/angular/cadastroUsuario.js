@@ -7,6 +7,8 @@ angular.module("roupasApp").run(["$http", function ($http) {
 
 angular.module("roupasApp").controller("cadastroUsuarioCtrl", function ($scope, $http) {
 
+    $scope.teste = false;
+
     // Adiciona Usuário
     $scope.addUsuario = function () {
 

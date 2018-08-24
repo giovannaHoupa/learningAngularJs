@@ -4,6 +4,10 @@
 <head>
     <title>Cadastro de Usuário</title>
 
+    <?php
+        $this->load->view('includes/linksGerais');
+    ?>
+
     <link href="<?= base_url(); ?>assets/css/cadastro.css" rel="stylesheet" type="text/css"/>
     <script src="<?= base_url(); ?>assets/angular/cadastroUsuario.js"></script>
 </head>
@@ -13,7 +17,7 @@
 <div class="container">
 
     <!-- Formulário de Cadastro de Usuarios -->
-    <div>
+    <div ng-if="teste">
         <div>
             <h1>Novo Usuário</h1>
         </div>

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="roupasApp">
+<html ng-app="teste">
     <head>
         <meta charset="utf-8">
         <title> Login </title>
-        <script href="../../assets/angular/login.js"></script>
         <?php
-            $this->load->view('includes/linksGerais');
+            //$this->load->view('includes/linksGerais');
         ?>
+
+        <script src="<?= base_url(); ?>assets/angular/angular.js"></script>
+
+        <script src="<?= base_url(); ?>assets/angular/login.js"></script>
     </head>
-    <body ng-controller="log inCtrl">
-        <div class="containerLogin">
-            {{teste}}
+    <body ng-controller="loginCtrl">
+        <div ng-if="teste == true" class="containerLogin">
+            mano
         </div>
     </body>
 </html>
