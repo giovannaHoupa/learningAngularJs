@@ -10,6 +10,7 @@
     <script type="text/javascript">
         var baseUrl = '<?= base_url(); ?>'
     </script>
+
 </head>
 
 <body ng-controller="cadastroUsuarioCtrl">
