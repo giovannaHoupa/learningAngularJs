@@ -20,9 +20,30 @@ angular.module("roupasApp").controller('loginCtrl',function ($scope, $http) {
         }).then(function (response) {
             console.log('resposta ', response);
             if(response.data.sucesso){
-                window.location.href=baseUrl+"C_usuarios";
+                window.location.href=baseUrl+"C_usuario";
             }
         });
     };
 
+    $scope.addUsuario = function () {
+        $http({
+            method: 'POST',
+            url: baseUrl + 'c_usuario/cadastrar',
+            data: $.param({nome_usuario: $scope.nome_usuario, login: $scope.login, senha: $scope.senha})
+        }).then(function (response) {
+            $scope.addUsuario = response.data;
+
+            $scope.usuario =  {
+                userLogin: $scope.login,
+                userPassword: $scope.senha
+            };
+
+            $scope.logar();
+
+        });
+    };
+
+    $scope.doLogout = function () {
+        window.location.href=baseUrl+"C_login/sair";
+    };
 });

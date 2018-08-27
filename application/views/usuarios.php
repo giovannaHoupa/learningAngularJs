@@ -9,7 +9,7 @@
 
         <script src="<?= base_url(); ?>assets/angular/login.js"></script>
     </head>
-    <body>
+    <body ng-controller="loginCtrl">
         <div>
             Primeira página após login
 

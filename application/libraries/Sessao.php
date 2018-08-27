@@ -37,4 +37,9 @@ class Sessao{
 
     }
 
+    public function sair(){
+        session_destroy();
+        redirect('Login/index/', 'refresh');
+    }
+
 }
